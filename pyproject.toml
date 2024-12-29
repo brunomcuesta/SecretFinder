@@ -7,7 +7,7 @@ name = "secretfinder"
 version = "1.0"
 description = "SecretFinder is a python script based on LinkFinder, written to discover sensitive data like apikeys, accesstoken, authorizations, jwt,..etc in JavaScript files"
 authors = [
-    { name = "m4ll0k", email = "" }
+    { name = "m4ll0k", email = "yourmail@mail.com" }
 ]
 license = { text = "MIT" }
 dependencies = [
