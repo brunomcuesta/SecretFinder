@@ -23,6 +23,15 @@ import random
 from html import escape
 import urllib3
 import xml.etree.ElementTree
+import signal
+import sys
+
+# signal handler function
+def SignalHandler_SIGINT(SignalNumber,Frame):
+    sys.exit(0)
+    
+# register the signal with Signal handler
+signal.signal(signal.SIGINT,SignalHandler_SIGINT)
 
 # disable warning
 
@@ -383,6 +392,7 @@ def send_request(url):
         sys.exit(0)
 
 if __name__ == "__main__":
+    global args
     parser = argparse.ArgumentParser()
     parser.add_argument("-e","--extract",help="Extract all javascript links located in a page and process it",action="store_true",default=False)
     parser.add_argument("-i","--input",help="Input a: URL, file or folder",required="True",action="store")
