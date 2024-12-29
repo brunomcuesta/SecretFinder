@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secretfinder"
+version = "1.0"
+description = "SecretFinder is a python script based on LinkFinder, written to discover sensitive data like apikeys, accesstoken, authorizations, jwt,..etc in JavaScript files"
+authors = [
+    { name = "m4ll0k", email = "" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "requests_file",
+    "requests",
+    "jsbeautifier",
+    "lxml"
+]
+
+[project.scripts]
+secretfinder = "SecretFinder:main"
