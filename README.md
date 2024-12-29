@@ -63,6 +63,7 @@ By installing with pipx, secretfinder can be executed globally.
 $ git clone https://github.com/brunomcuesta/SecretFinder.git
 $ cd SecretFinder
 $ pipx install .
+$ secretfinder
 ```
 
 ## Usage
