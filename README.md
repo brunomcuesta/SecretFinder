@@ -48,8 +48,8 @@ optional arguments:
 SecretFinder supports Python 3.
 
 ```
-$ git clone https://github.com/m4ll0k/SecretFinder.git secretfinder
-$ cd secretfinder
+$ git clone https://github.com/m4ll0k/SecretFinder.git
+$ cd SecretFinder
 $ python -m pip install -r requirements.txt or pip install -r requirements.txt
 $ python3 SecretFinder.py
 ```
@@ -60,8 +60,8 @@ The advantage of pipx is that the installed dependencies will be isolated from o
 By installing with pipx, secretfinder can be executed globally.
 
 ```
-$ git clone https://github.com/m4ll0k/SecretFinder.git secretfinder
-$ cd secretfinder
+$ git clone https://github.com/brunomcuesta/SecretFinder.git
+$ cd SecretFinder
 $ pipx install .
 ```
 
