@@ -54,6 +54,17 @@ $ python -m pip install -r requirements.txt or pip install -r requirements.txt
 $ python3 SecretFinder.py
 ```
 
+## Installation with pipx (recommended)
+
+The advantage of pipx is that the installed dependencies will be isolated from other packages or dependencies of other scripts.
+By installing with pipx, secretfinder can be executed globally.
+
+```
+$ git clone https://github.com/m4ll0k/SecretFinder.git secretfinder
+$ cd secretfinder
+$ pipx install .
+```
+
 ## Usage
 
 - Most basic usage to find the sensitive data with default regex in an online JavaScript file and output the HTML results to results.html:
