@@ -391,7 +391,7 @@ def send_request(url):
         print(err)
         sys.exit(0)
 
-if __name__ == "__main__":
+def main():
     global args
     parser = argparse.ArgumentParser()
     parser.add_argument("-e","--extract",help="Extract all javascript links located in a page and process it",action="store_true",default=False)
@@ -472,3 +472,6 @@ if __name__ == "__main__":
                 output += header + body
     if args.output != 'cli':
         html_save(output)
+
+if __name__ == "__main__":
+    main()
