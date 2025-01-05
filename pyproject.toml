@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [project.scripts]
-secretfinder = "SecretFinder:main"
+secretfinder = "secretfinder:main"
